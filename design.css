@@ -1,0 +1,75 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+html , body{
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8cded;
+}
+
+.Container{
+    height: 600px;
+    width: 30%;
+    background-color: white;
+    border: 4px solid #471471;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Stories{
+    height: 120px;
+    width: 100%;
+    /* background-color: #ED4599; */
+    /* border-top-right-radius: 15px;
+    border-top-left-radius: 15px; */
+    border-bottom: 1px solid #471471;
+    /* display: flex; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.Stories::-webkit-scrollbar{
+    display: none;
+}
+.Story{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    border:2px solid maroon;
+    background-color: white;
+    margin:10px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.Story img{
+    height:100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.OpenStory{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    /* background-color: #e22fb6; */
+    display: none;
+    background-position:center;
+    background-size: cover;
+}
+
+/* .OpenStory img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+} */
